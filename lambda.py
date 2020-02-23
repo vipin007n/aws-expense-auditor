@@ -80,7 +80,7 @@ def lambda_handler(event=None, context=None):
     cost_metrics.append(["Total Cost", str(cost_sum)])
 
     #Save the cost metric data to CSV file
-    save_as_csv(cost_metrics)
+    save_as_csv(cost_metrics) 
 
     #Send the report CSV through email
     send_email()
